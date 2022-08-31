@@ -1,12 +1,12 @@
 <?php
-$name = $_GET["name"] ?? null;
-$email = $_GET["email"] ?? null;
-$age = $_GET["age"] ?? null;
-//$correct_email = filter_var($email, FILTER_VALIDATE_EMAIL) ? true : false;
+$name = $_GET["name"] ?? '';
+$email = $_GET["email"] ?? '';
+$age = $_GET["age"] ?? '';
 
-$correct_email = (substr_count($email, '@') === 1 && substr_count($email, '.') === 1) ? true :false;
+
+$correct_email = (strpos($email, '@')&& strpos($email, '.') === 1) ? true :false;
 $correct_name = strlen($name) > 3 ? true : false;
-$correct_age = is_numeric($age) ? true : false;
+$correct_age = is_numeric($age);
 $correct_data = ($correct_email && $correct_name && $correct_age )  ? true : false;
 $access = "";
 if($correct_data) $access = "Accesso riuscito" ;

@@ -22,8 +22,8 @@ $mtach_bascket_array = [
 
 </head>
 <body>
-    <h1>Risultati Lega A</h1>
-    <h2>Giornata 29</h2>
+    <h1>Risultati partite</h1>
+    <h2>Giornata 8</h2>
     <ul>
         <?php for ($i = 0; $i < count($mtach_bascket_array); $i++): ?>
         <li><?=$mtach_bascket_array[$i]['Home']?> - <?=$mtach_bascket_array[$i]['Away']?> : <strong><?=$mtach_bascket_array[$i]['home_score']?> | <?=$mtach_bascket_array[$i]['away_score']?></strong></li>

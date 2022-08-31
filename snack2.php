@@ -7,7 +7,7 @@ $age = $_GET["age"] ?? null;
 $correct_email = (substr_count($email, '@') === 1 && substr_count($email, '.') === 1) ? true :false;
 $correct_name = strlen($name) > 3 ? true : false;
 $correct_age = is_numeric($age) ? true : false;
-$correct_data = ($correct_email and $correct_name and $correct_age )  ? true : false;
+$correct_data = ($correct_email && $correct_name && $correct_age )  ? true : false;
 $access = "";
 if($correct_data) $access = "Accesso riuscito" ;
 if(!$correct_data) $access = "Accesso negato" ;

@@ -1,14 +1,14 @@
 
 <?php
 $mtach_bascket_array = [
-    ["Home" => "Caserta ", "Away" => "Parma", "HomeScore" => "50", "AwayScore" => "60"],
-    ["Home" => "Bologna", "Away" => "Verona", "HomeScore" => "48", "AwayScore" => "65"],
-    ["Home" => "Pescara", "Away" => "Trento", "HomeScore" => "40", "AwayScore" => "90"],
-    ["Home" => "Sassari", "Away" => "Cremona", "HomeScore" => "80", "AwayScore" => "60"],
-    ["Home" => "Varese", "Away" => "Trieste", "HomeScore" => "60", "AwayScore" => "20"],
-    ["Home" => "salerno", "Away" => "Foggia", "HomeScore" => "80", "AwayScore" => "80"],
-    ["Home" => "Milano", "Away" => "Bari", "HomeScore" => "40", "AwayScore" => "56"],
-    ["Home" => "Cagliari", "Away" => "Roma", "HomeScore" => "72", "AwayScore" => "65"],
+    ["Home" => "Caserta ", "Away" => "Parma", "home_score" => "50", "away_score" => "60"],
+    ["Home" => "Bologna", "Away" => "Verona", "home_score" => "48", "away_score" => "65"],
+    ["Home" => "Pescara", "Away" => "Trento", "home_score" => "40", "away_score" => "90"],
+    ["Home" => "Sassari", "Away" => "Cremona", "home_score" => "80", "away_score" => "60"],
+    ["Home" => "Varese", "Away" => "Trieste", "home_score" => "60", "away_score" => "20"],
+    ["Home" => "salerno", "Away" => "Foggia", "home_score" => "80", "away_score" => "80"],
+    ["Home" => "Milano", "Away" => "Bari", "home_score" => "40", "away_score" => "56"],
+    ["Home" => "Cagliari", "Away" => "Roma", "home_score" => "72", "away_score" => "65"],
 ]
 ?>
 
@@ -26,7 +26,7 @@ $mtach_bascket_array = [
     <h2>Giornata 29</h2>
     <ul>
         <?php for ($i = 0; $i < count($mtach_bascket_array); $i++): ?>
-        <li><?=$mtach_bascket_array[$i]['Home']?> - <?=$mtach_bascket_array[$i]['Away']?> : <strong><?=$mtach_bascket_array[$i]['HomeScore']?> | <?=$mtach_bascket_array[$i]['AwayScore']?></strong></li>
+        <li><?=$mtach_bascket_array[$i]['Home']?> - <?=$mtach_bascket_array[$i]['Away']?> : <strong><?=$mtach_bascket_array[$i]['home_score']?> | <?=$mtach_bascket_array[$i]['away_score']?></strong></li>
         <?php endfor?>
     </ul>
 </body>
